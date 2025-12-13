@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسلامی سپرٹچوئل ٹریکر</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Darood-e-Ibraheem -->
+        <header>
+            <div class="darood">
+                <i class="fas fa-star-and-crescent"></i>
+                <div class="darood-text">
+                    <h1 class="arabic-text">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</h1>
+                    <h1 class="arabic-text">اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</h1>
+                </div>
+                <i class="fas fa-star-and-crescent"></i>
+            </div>
+            
+            <div class="section-line">
+                <span></span>
+                <h2 id="appTitle">اسلامی ٹریکر</h2>
+                <span></span>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Section 1: Prayer & Life Tracker -->
+            <section id="section1" class="app-section">
+                <h2 class="section-title">
+                    <i class="fas fa-pray"></i>
+                    <span class="section-title-text">سیکشن 1: نماز اور زندگی کا ٹریکر</span>
+                    <i class="fas fa-quran"></i>
+                </h2>
+                
+                <div class="section-container">
+                    <!-- Input Section -->
+                    <div class="input-section">
+                        <h3><i class="fas fa-edit"></i> <span class="input-section-title">اپنا ڈیٹا درج کریں</span></h3>
+                        
+                        <div class="input-group">
+                            <label for="userName">
+                                <i class="fas fa-user"></i>
+                                <span class="label-text">آپ کا نام</span>
+                            </label>
+                            <input type="text" id="userName" placeholder="اپنا نام لکھیں" required value="اسلامی یوزر">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="birthDate">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span class="label-text">پیدائش کی تاریخ</span>
+                            </label>
+                            <input type="date" id="birthDate" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="prayerCount">
+                                <i class="fas fa-calendar-day"></i>
+                                <span class="label-text">آپ دن میں 5 نمازوں میں سے کتنی نماز پڑھتے ہیں؟</span>
+                            </label>
+                            <select id="prayerCount">
+                                <option value="0">0 - کوئی نہیں</option>
+                                <option value="1">1 نماز</option>
+                                <option value="2">2 نمازیں</option>
+                                <option value="3">3 نمازیں</option>
+                                <option value="4">4 نمازیں</option>
+                                <option value="5" selected>5 نمازیں (فرض)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="prayerTime">
+                                <i class="fas fa-clock"></i>
+                                <span class="label-text">ہر نماز کو کتنا وقت دیتے ہیں؟ (منٹ)</span>
+                            </label>
+                            <select id="prayerTime">
+                                <option value="5">5 منٹ</option>
+                                <option value="10">10 منٹ</option>
+                                <option value="15" selected>15 منٹ</option>
+                                <option value="20">20 منٹ</option>
+                                <option value="25">25 منٹ</option>
+                                <option value="30">30 منٹ</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="sleepTime">
+                                <i class="fas fa-bed"></i>
+                                <span class="label-text">روزانہ کتنے گھنٹے سوتے ہیں؟</span>
+                            </label>
+                            <select id="sleepTime">
+                                <option value="5">5 گھنٹے</option>
+                                <option value="6">6 گھنٹے</option>
+                                <option value="7" selected>7 گھنٹے</option>
+                                <option value="8">8 گھنٹے</option>
+                                <option value="9">9 گھنٹے</option>
+                                <option value="10">10 گھنٹے</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="mobileTime">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span class="label-text">روزانہ کتنا وقت موبائل استعمال کرتے ہیں؟</span>
+                            </label>
+                            <select id="mobileTime">
+                                <option value="20">20 منٹ</option>
+                                <option value="30">30 منٹ</option>
+                                <option value="60">1 گھنٹہ</option>
+                                <option value="120" selected>2 گھنٹے</option>
+                                <option value="180">3 گھنٹے</option>
+                                <option value="240">4 گھنٹے</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="washroomTime">
+                                <i class="fas fa-toilet"></i>
+                                <span class="label-text">روزانہ بیت الخلا میں کتنا وقت گزارتے ہیں؟</span>
+                            </label>
+                            <select id="washroomTime">
+                                <option value="10">10 منٹ</option>
+                                <option value="20" selected>20 منٹ</option>
+                                <option value="30">30 منٹ</option>
+                                <option value="40">40 منٹ</option>
+                                <option value="50">50 منٹ</option>
+                                <option value="60">1 گھنٹہ</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="foodTime">
+                                <i class="fas fa-utensils"></i>
+                                <span class="label-text">روزانہ کھانے میں کتنا وقت دیتے ہیں؟</span>
+                            </label>
+                            <select id="foodTime">
+                                <option value="20" selected>20 منٹ</option>
+                                <option value="30">30 منٹ</option>
+                                <option value="40">40 منٹ</option>
+                                <option value="50">50 منٹ</option>
+                                <option value="60">1 گھنٹہ</option>
+                                <option value="90">1.5 گھنٹے</option>
+                            </select>
+                        </div>
+                        
+                        <button id="calculateBtn" class="btn-primary">
+                            <i class="fas fa-calculator"></i> <span class="btn-text">حساب لگائیں اور کارڈ بنائیں</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Result Card -->
+                    <div class="result-section">
+                        <h3><i class="fas fa-id-card"></i> <span class="result-section-title">آپ کا کارڈ</span></h3>
+                        <div class="card" id="spiritualCard">
+                            <div class="card-header">
+                                <div class="user-avatar" id="cardAvatar">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="user-info">
+                                    <h3 id="cardName">آپ کا نام</h3>
+                                    <p class="user-age" id="cardAge">عمر: لوڈ ہو رہی ہے...</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="stats-grid">
+                                    <div class="stat-item">
+                                        <i class="fas fa-praying-hands"></i>
+                                        <h4>روزانہ نماز کا وقت تقریباً</h4>
+                                        <p id="dailyPrayerTime">0 منٹ</p>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <h4>اب تک کل نمازیں تقریباً</h4>
+                                        <p id="totalPrayers">0</p>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-history"></i>
+                                        <h4>کل نماز کا وقت تقریباً</h4>
+                                        <p id="totalPrayerTime">حساب لگا رہا ہے...</p>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-user-clock"></i>
+                                        <h4>کل عمر کا حساب تقریباً</h4>
+                                        <p id="totalAge">0 سال</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="lifetime-stats">
+                                    <h4><i class="fas fa-chart-line"></i> <span class="lifetime-stats-title">زندگی بھر کا حساب (12 سال کے بعد)</span></h4>
+                                    <p id="lifetimeStats">آپ نے اب تک اپنی زندگی کے 0 سال، 0 ماہ، 0 دن نماز پڑھی ہے۔</p>
+                                    
+                                    <div class="current-time-section">
+                                        <h5><i class="fas fa-clock"></i> <span class="current-time-title">اب تک گزارا ہوا وقت</span></h5>
+                                        <div class="current-time-grid">
+                                            <div class="time-item">
+                                                <i class="fas fa-bed"></i>
+                                                <span class="time-label">سونے میں تقریباً :</span>
+                                                <span id="currentSleepTime" class="time-value">0 سال، 0 ماہ، 0 دن</span>
+                                            </div>
+                                            <div class="time-item">
+                                                <i class="fas fa-utensils"></i>
+                                                <span class="time-label">کھانے میں تقریباً :</span>
+                                                <span id="currentFoodTime" class="time-value">0 سال، 0 ماہ، 0 دن</span>
+                                            </div>
+                                            <div class="time-item">
+                                                <i class="fas fa-toilet"></i>
+                                                <span class="time-label">بیت الخلا میں تقریباً:</span>
+                                                <span id="currentWashroomTime" class="time-value">0 سال، 0 ماہ، 0 دن</span>
+                                            </div>
+                                            <div class="time-item">
+                                                <i class="fas fa-mobile-alt"></i>
+                                                <span class="time-label">موبائل استعمال تقریباً :</span>
+                                                <span id="currentMobileTime" class="time-value">0 سال، 0 ماہ، 0 دن</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="projection-options">
+                                        <label><span class="projection-label">اگر آپ کی زندگی:</span></label>
+                                        <div class="projection-buttons">
+                                            <button class="projection-btn active" data-years="60">60 سال</button>
+                                            <button class="projection-btn" data-years="70">70 سال</button>
+                                            <button class="projection-btn" data-years="80">80 سال</button>
+                                        </div>
+                                        <div id="lifeAnalysis">
+                                            <p>زندگی کا تجزیہ یہاں دکھایا جائے گا</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Accuracy Message -->
+                                <div class="accuracy-message">
+                                    <p><i class="fas fa-info-circle"></i> ہم نے یہ ڈیٹا آپ کو حساب کر کے دیا ہے۔ آپ خود سے بھی کیلکولیٹر سے یا کسی AI ٹول کو استعمال کر کے حساب کر سکتے ہیں۔ اگر کہیں پر معمولی فرق ہوا تو وہ چند دن یا تھوڑے وقت کا ہوگا۔</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Qaza Prayer Calculator -->
+            <section id="section2" class="app-section">
+                <h2 class="section-title">
+                    <i class="fas fa-calendar-times"></i>
+                    <span class="section-title-text">سیکشن 2: قضا نماز کیلکولیٹر</span>
+                    <i class="fas fa-calculator"></i>
+                </h2>
+                
+                <div class="section-container">
+                    <!-- Input Section -->
+                    <div class="input-section">
+                        <h3><i class="fas fa-edit"></i> <span class="input-section-title">قضا نماز کا حساب</span></h3>
+                        
+                        <div class="input-group">
+                            <label for="prayersYears">
+                                <i class="fas fa-calendar"></i>
+                                <span class="label-text">آپ نے 12 سال کے بعد کتنے سال تک نماز پڑھی ہے؟</span>
+                            </label>
+                            <input type="number" id="prayersYears" min="0" max="100" value="5" placeholder="سال">
+                            <p class="input-hint">12 سال کے بعد سے جتنے سال نماز پڑھی ہے</p>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="prayersMonths">
+                                <i class="fas fa-moon"></i>
+                                <span class="label-text">اور کتنے ماہ؟ (اگر سال مکمل نہیں ہیں)</span>
+                            </label>
+                            <input type="number" id="prayersMonths" min="0" max="11" value="0" placeholder="ماہ">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="prayerConsistency">
+                                <i class="fas fa-percentage"></i>
+                                <span class="label-text">آپ کتنی مستقل مزاجی سے نماز پڑھتے ہیں؟</span>
+                            </label>
+                            <select id="prayerConsistency">
+                                <option value="100">100% - روز 5/5 نماز</option>
+                                <option value="80">80% - روز 4/5 نماز</option>
+                                <option value="60" selected>60% - روز 3/5 نماز</option>
+                                <option value="40">40% - روز 2/5 نماز</option>
+                                <option value="20">20% - روز 1/5 نماز</option>
+                                <option value="0">0% - کبھی نہیں</option>
+                            </select>
+                        </div>
+                        
+                        <button id="calculateQazaBtn" class="btn-primary">
+                            <i class="fas fa-calculator"></i> <span class="btn-text">قضا نماز کا حساب لگائیں</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Result Card -->
+                    <div class="result-section">
+                        <h3><i class="fas fa-exclamation-triangle"></i> <span class="result-section-title">قضا نماز کا کارڈ</span></h3>
+                        <div class="card" id="qazaCard">
+                            <div class="card-header">
+                                <div class="user-avatar" id="qazaAvatar">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="user-info">
+                                    <h3 id="qazaName">آپ کا نام</h3>
+                                    <p class="user-age"><span class="qaza-title">قضا نماز رپورٹ</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="qaza-stats">
+                                    <div class="stat-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <h4>پڑھی ہوئی نماز تقریباً</h4>
+                                        <p id="prayersDoneCount">0</p>
+                                    </div>
+                                    <div class="stat-item danger">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <h4>کل قضا نماز تقریباً</h4>
+                                        <p id="totalQaza">0</p>
+                                    </div>
+                                    <div class="stat-item warning">
+                                        <i class="fas fa-clock"></i>
+                                        <h4>قضا نماز کا وقت تقریباً</h4>
+                                        <p id="qazaTime">0 دن</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="qaza-details">
+                                    <h4><i class="fas fa-info-circle"></i> <span class="qaza-details-title">تفصیل</span></h4>
+                                    <p id="qazaDetail">آپ نے کل  0 نمازیں پڑھی ہیں۔ آپ کی 0 نمازیں قضا ہیں۔ اگر آپ روز 5 قضا نمازیں پڑھیں، تو آپ انہیں 0 دن میں پورا کر سکتے ہیں۔</p>
+                                    <p class="qaza-note"><i class="fas fa-info-circle"></i> حساب 12 سال کی عمر سے لے کر آج کی تاریخ تک کا ہے۔</p>
+                                </div>
+                                
+                                <!-- Current Time Stats for Qaza -->
+                                <div class="current-time-section">
+                                    <h5><i class="fas fa-chart-bar"></i> <span class="current-time-title">12 سال کے بعد سے اب تک کا کل وقت</span></h5>
+                                    <div class="current-time-grid">
+                                        <div class="time-item">
+                                            <i class="fas fa-bed"></i>
+                                            <span class="time-label">سونے میں تقریباً :</span>
+                                            <span id="qazaSleepTime" class="time-value">0 سال، 0 ماہ، 0 دن</span>
+                                        </div>
+                                        <div class="time-item">
+                                            <i class="fas fa-utensils"></i>
+                                            <span class="time-label">کھانے میں تقریباً :</span>
+                                            <span id="qazaFoodTime" class="time-value">0 سال، 0 ماہ، 0 دن</span>
+                                        </div>
+                                        <div class="time-item">
+                                            <i class="fas fa-toilet"></i>
+                                            <span class="time-label">بیت الخلا میں تقریباً:</span>
+                                            <span id="qazaWashroomTime" class="time-value">0 سال، 0 ماہ، 0 دن</span>
+                                        </div>
+                                        <div class="time-item">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <span class="time-label">موبائل استعمال تقریباً:</span>
+                                            <span id="qazaMobileTime" class="time-value">0 سال، 0 ماہ، 0 دن</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Accuracy Message for Qaza -->
+                                <div class="accuracy-message">
+                                    <p><i class="fas fa-info-circle"></i> ہم نے یہ ڈیٹا آپ کو حساب کر کے دیا ہے۔ آپ خود سے بھی کیلکولیٹر سے یا کسی AI ٹول کو استعمال کر کے حساب کر سکتے ہیں۔ اگر کہیں پر معمولی فرق ہوا تو وہ چند دن یا تھوڑے وقت کا ہوگا۔</p>
+                                </div>
+                                
+                                <div class="molvi-contact">
+                                    <h4><i class="fas fa-handshake"></i> <span class="molvi-contact-title">مفتی صاحب سے ربطہ کریں</span></h4>
+                                    <p>قضا نماز کے طریقے اور وقت کے بارے میں معلومات کے لیے نیچے دیے گئے مفتی صاحب سے ربطہ کریں:</p>
+                                    <button id="contactMolviBtn" class="btn-secondary">
+                                        <i class="fas fa-phone-alt"></i> <span class="btn-text">مفتی صاحب سے ربطہ کریں</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Islamic Guidance -->
+            <section id="section3" class="app-section guidance-section">
+                <h2 class="section-title">
+                    <i class="fas fa-lightbulb"></i>
+                    <span class="section-title-text">سیکشن 3: اسلامی رہنمائی</span>
+                    <i class="fas fa-mosque"></i>
+                </h2>
+                
+                <div class="guidance-container">
+                    <div class="guidance-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-info-circle"></i> <span class="guidance-main-title">سبق اور رہنمائی</span></h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="intro-message">
+                                اب آپ نے اپنی زندگی کا ڈیٹا دیکھ لیا ہے، آپ نے اپنا معائنہ کر لیا ہے تو اب آپ نے کیا سبق حاصل کیا ہے؟ اگر آپ اپنا وقت دین کے مطابق کرنا چاہتے ہیں تو کچھ کام آپ نے یہ کرنے ہیں:
+                            </p>
+                            
+                            <div class="guidance-grid">
+                                <div class="guidance-item positive">
+                                    <h4><i class="fas fa-check-circle"></i> <span class="guidance-item-title">یہ کام کرنے ہیں</span></h4>
+                                    <ul>
+                                        <li>اپنی نمازوں کی پابندی کرنی ہے</li>
+                                        <li>اپنی قضا نمازوں کو پڑھنا ہے</li>
+                                        <li>صبح اور شام کو 100 مرتبہ درود ابراہیم، 100 مرتبہ تیسرا کلمہ، 100 مرتبہ استغفار پڑھنا ہے</li>
+                                        <li>اور سارے دن کے اندر بھی کوئی ذکر کرے (نوٹ: آپ نے کسی مفتی صاحب سے معلوم کر کے پھر ذکر کرنا ہے)</li>
+                                        <li>شلوار کو ٹخنوں سے اوپر رکھنا ہے</li>
+                                        <li>سارے کام سنت کے مطابق کرنے ہیں (نوٹ: کونسے کام سنت کے مطابق ہیں یہ بھی مفتی صاحب سے معلوم کریں)</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="guidance-item negative">
+                                    <h4><i class="fas fa-times-circle"></i> <span class="guidance-item-title">یہ کام نہیں کرنے</span></h4>
+                                    <ul>
+                                        <li>جھوٹ نہیں بولنا ہے</li>
+                                        <li>بد نظری سے بچنا ہے</li>
+                                        <li>زبان کو کنٹرول میں کرنا ہے</li>
+                                        <li>فلم، گانے، وغیرہ سے بچنا ہے</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <d class="naseehat-section">
+                                <div class="naseehat-section">
+                                    <h4><i class="fas fa-book-open"></i> <span class="naseehat-title">نصیحت</span></h4>
+                                    <div class="naseehat-text">
+                                        <p>آپ کو جو بھی کام کہا ہے وہ آپ نے کرنے ہیں۔ ہم لوگ بہت زیادہ غفلت کے اندر زندگی گزار رہے ہیں، پھر ایک دن موت آ جانی ہے اور سب کام رک جائیں گے۔ کیا کبھی سوچا ہے اس دن کے بارے میں؟ اگر کسی طالب علم کو معلوم ہو جائے کہ اس کے پیپر کے اندر یہ سوال آئے گا تو یقین کریں کہ وہ اچھے نمبر لے کر آئے گا۔</p>
+                                        
+                                        <p>لیکن اسے معلوم نہیں ہوتا۔ اسی لیے تو وہ محنت کرتا ہے۔ ایک دنیا کے ٹیسٹ کے لیے، پر ہم کو معلوم ہے کہ قبر کے اندر 3 سوال ہوں گے۔ لیکن کیا ہماری تیاری ہے اس کی؟ ہم کہتے ہیں کہ اللہ سبحانہ وتعالی پر یقین ہے وہ معاف کر دے گا، جی بالکل صحیح ہے لیکن اللہ پر یقین ہے نا تو آپ سمندر کے اندر جمپ لگا دیں، یا اپنی چھت سے جمپ لگا دیں، اگر آپ بچ گئے تو آپ کا یقین ٹوٹ جائے گا۔ اور آپ بھٹک جائیں گے۔</p>
+                                        
+                                        <p>تو آپ کو اگر اللہ سبحانہ وتعالی پر یقین ہوتا تو آپ اللہ کا ہر حکم مانتے۔ ہم کہتے ہیں کہ نیت صحیح ہو بس، یہ بھی صحیح ہے پر یاد رکھنا حضرت آدم علیہ السلام نے جنت کے اندر صرف سیب (ایپل) کھایا تھا تو نیت ان کی بھی ٹھیک تھی۔ حلال چیز کھائی تھی نا؟ لیکن بات نیت کی نہیں بات یہ ہے کہ اللہ سبحانہ وتعالی کا حکم نہیں مانا۔</p>
+                                        
+                                        <p>مانا آپ کے پاس ہر سوال کا جواب ہے۔ اپنی صفائی کے اندر۔ پر یہی جواب آپ روز محشر کے اندر بھی دیں گے یہ بھی یاد رکھنا۔ آپ اپنے بچوں کے سامنے گالی دیتے ہو۔ اور پھر بچوں کو کہتے ہو کہ گالی نہ دو۔ تو بچہ یہ سیکھتا ہے کہ والد کے سامنے گالی نہیں دینی۔ باقی سب جگہ گالی دینی ہے۔</p>
+                                        
+                                        <p>اسی لیے خود بھی عمل کریں، اور اپنے بچوں پر نظر رکھیں کہ کہاں جا رہا ہے، کس کے ساتھ ہے؟ کیونکہ بچہ جس ماحول کے اندر زیادہ وقت گزارتا ہے۔ وہ وہی وقت صحیح سمجھتا ہے پھر وہ اپنے والد کی بات نہیں مانتا۔ اور نافرمان بن جاتا ہے۔ اور اپنے بچوں کو ان کی طبیعت کے مطابق سمجھائیں۔ نہ کہ مار سے۔ یا زیادہ پیار سے۔ بلکہ اس کو احساس دلائیں کہ کونسا کام کرنے سے کیا نقصان ہے۔ اور کیا فائدہ۔</p>
+                                        
+                                        <p>اپنے بچوں کو کسی مسجد یا مدرسہ کے اندر تعلیم لازمی دلوائیں۔ اور خود بھی کوئی ایک وقت نکال کر جائیں اور مفتی صاحب سے اپنی نماز کو صحیح کریں کیونکہ ابھی تک ہماری نمازوں کے اندر بہت ساری غلطیاں ہیں۔ اپنے قرآن پاک کے لفظ کو صحیح کریں۔ اور قرآن پاک کا مطلب سمجھیں۔ اور قرآن پاک کو بھی پڑھنا ہے۔ انسان شراب پی کر سچ بولتا ہے۔ اور قرآن پاک پر ہاتھ رکھ کر جھوٹ بولتا ہے۔ یہ ہمارا ایمان ہے۔</p>
+                                        
+                                        <p>اگر کسی کوئے کے اندر 4 راستے سے پانی آتا ہو۔ 3 راستے سے پانی صاف اور ایک راستے سے پانی خراب آتا ہو۔ تو سارے کوئے کا پانی خراب ہو جائے گا۔ اسی طرح سے ہمارے دل کے بھی 4 راستے ہیں، ہمارا سننا، ہمارا بولنا، ہمارا دیکھنا، اور ہمارا سوچنا، اگر کوئی ایک بھی خراب ہے تو ہماری نیت پر فرق پڑے گا۔ اور نیت سے ہی اعمال بنتے ہیں، اب آپ معائنہ کریں کہ آپ کے دل کے کتنے راستے صحیح ہیں۔</p>
+
+                                        <p>اگر نماز پڑھتے وقت ہمارے سر ننگے ہیں تو کہتے ہیں کہ نماز نہیں ہوگی، اور کوئی بابا پورا ننگا گھومے تو کہتے ہیں کہ بابا جی تو پہنچی ہوئی چیز ہے۔ بھائی اگر آپ کو اونچی جگہ تعلق بنانے کا شوق ہے تو عرش پر بیٹھے رب سے بناو نا۔</p>
+
+                                        <p>میرے بھائی کبھی بھی اللہ پاک کی ذات سے نا امید نہ ہونا، کیوں کے نا امیدی تو کفر ہے، اللہ پاک سے سچی توبہ کرو وہ معاف کردے گا، پر ہمیں زبانی والی توبہ سے بھی توبہ کرنی چاہیے، اللہ پاک سے دل سے توبہ کریں۔ اور عہد کریں کہ دوبارہ ہم گناہ نہیں کریں گے، وہ بڑا رحیم ذات ہے معاف کردے گا۔</p>
+
+                                        <p>کبھی رات کو سونے سے پہلے اپنی نیکی اور گناہ کو بھی گِن لیا کریں۔ تاکہ آپ کو معلوم ہو کہ آج کا دن کیسا رہا، اگر آج رات موت آ گئی تو کیا میں تیار ہوں حساب کے لئے، ہم کہتے ہیں کہ زندگی ایک بار ملتی ہے تو جو کرنا ہے کرلو، یہ جھوٹ ہے زندگی تو روزانہ ملتی ہے۔ موت ایک بار ملتی ہے۔</p>
+
+                                        <p>بھائی اگر روز محشر ہمارے نبی ﷺ نے ہم کو پہچاننے سے انکار کر دیا تو ہمارا بنے گا کیا، کہ ہم خود نبی ﷺ کو نہیں پہچانتے، کبھی درود نہیں پڑھتے، انکی سنت پر عمل نہیں کرتے، بھائی ہم اس نبی ﷺ کو دھوکہ دے رہے ہیں جو ہمارے لئے اس وقت دعا کرکے گیا جب ہم پيدا بھی نہیں ہوئے تھے۔</p>
+
+                                        <p>اسی لیے میرے بھائی ہم کو اپنی زندگی کے اندر بڑے صدقے کرنے چاہیے، کہیں پر مسجد یا مدرسہ کے اندر آپ تعاون کریں، اپنے محلہ کے اندر کسی غریب کی ہیلپ کردیں، کہیں ضرورت ہو وہاں پر پانی کا بندوبست کردیں۔ یہ بہت بڑے صدقے ہیں۔</p>
+
+                                        <p>اگر آپ نے یہاں تک پڑھا ہے تو اس کا مطلب ہے کہ آپ کو کچھ تو اثر ہوا ہے۔ اور آپ انشاءاللہ اب ان ساری باتوں پر عمل کرنے کے لئے تیار ہیں</p>
+                                        
+                                        <p class="separate-line"><span class="urdu-translation"></span>کہہ دیں سُبْحَانَ اللَّہ</span></p>
+                                        
+                                        <p>اپنے وقت کی قدر کریں، اگر اچھی جگہ وقت گزار دو گے تو حساب بھی اچھا ہوگا۔ ورنہ وقت بدلنے میں وقت نہیں لگتا۔ ہم سمجھتے ہیں کہ اگر اللہ سبحانہ وتعالی نے ہم کو کعبہ اور مدینہ کے اندر بلا لیا تو ہماری مغفرت ہو گی، ٹھیک ہے اللہ بہت بڑی شان والے ہیں۔ لیکن یہ مت بھولو کہ ابو جہل مکہ کے اندر ہی رہتا تھا۔ اسی لیے اپنے وقت کی قدر کریں:</p>
+                                        
+                                        <ul class="time-list">
+                                            <li>اگر آپ نے سال کی قدر معلوم کرنی ہے تو اس سے پوچھو جو پیپر کے اندر فیل ہو گیا ہو</li>
+                                            <li>اگر آپ نے مہینے کی قدر معلوم کرنی ہو تو اس سے پوچھو جس کو تنخواہ نہ ملی ہو</li>
+                                            <li>اگر آپ نے ہفتے کی قدر معلوم کرنی ہو تو آپ اس سے پوچھو جو بیمار ہو</li>
+                                            <li>اگر آپ نے دن کی قدر معلوم کرنی ہو تو آپ اس سے پوچھو جس نے روزہ رکھا ہو</li>
+                                            <li>اگر آپ نے گھنٹے کی قدر معلوم کرنی ہو تو آپ اس سے پوچھو جو کسی کے انتظار کے اندر بیٹھا ہوا ہو</li>
+                                            <li>اگر آپ نے 1 منٹ کی قدر معلوم کرنی ہو تو آپ اس سے پوچھو جس کی ٹرین نکل گئی ہو</li>
+                                            <li>اگر آپ نے 1 سیکنڈ کی قدر معلوم کرنی ہو تو آپ اس سے پوچھو جو کسی حادثے سے بچ گیا ہو</li>
+                                        </ul>
+                                        
+                                        <p>تو براہ کرم ان سب باتوں پر عمل کرو اور اپنے کسی مفتی صاحب سے ربطے کے اندر رہو تا کہ اپنی اصلاح ہو سکے اور تبلیغ جماعت کے اندر بھی جانا چاہیے اور علما ئے کرام کی قدر بھی کریں۔ یاد رکھیں کسی مولوی صاحب سے اگر کوئی آگے ہوتا ہے تو وہ میت ہوتی ہے، تو اگر آپ کسی عالم دین سے خود کو آگے سمجھیں تو آپ سمجھ جانا کہ آپ اندر سے مردہ ہو۔ اور آخر میں آپ براہ کرم میرے لیے بھی دعا کریں کہ اللہ سبحانہ وتعالی مجھے بھی ان سب باتوں پر عمل کی توفیق دے آمین۔</p>
+                                    </div>
+                                </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Mufti Contact Modal -->
+        <div id="molviModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-user-tie"></i> <span class="modal-title">مفتی صاحب سے ربطہ کریں</span></h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="molvi-card">
+                        <div class="molvi-avatar">
+                            <img src="rizwan-2.png" alt="Mufti Rizwan Ahmed">
+                        </div>
+                        <div class="molvi-info">
+                            <h4>مفتی رضوان احمد</h4>
+                            <p><i class="fas fa-graduation-cap"></i> <span class="molvi-detail">اسلامی اسکالر اور امام</span></p>
+                            <p><i class="fas fa-phone-alt"></i> <span class="molvi-detail">فون: <span class="phone-number">0307-8254820</span></span></p>
+                            <p><i class="fas fa-mosque"></i> <span class="molvi-detail">قبہ مسجد، بہلانی سٹی</span></p>
+                            <p><i class="fas fa-user-tie"></i> <span class="molvi-detail">قبہ مسجد کے امام</span></p>
+                        </div>
+                    </div>
+                    <div class="molvi-message">
+                        <p><i class="fas fa-info-circle"></i> مفتی رضوان احمد صاحب سے قضا نماز، نوافل اور دینی مسائل کے بارے میں معلومات حاصل کر سکتے ہیں۔ ان سے فون پر ربطہ کریں۔</p>
+                        <p><i class="fas fa-map-marker-alt"></i> پتہ: قبہ مسجد، مین روڈ، بہلانی سٹی</p>
+                    </div>
+                    <button class="btn-primary" id="callMolviBtn">
+                        <i class="fas fa-phone-alt"></i> <span class="btn-text">ابھی کال کریں</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <!-- <footer>
+            <div class="footer-content">
+                <p><i class="fas fa-info-circle"></i> <strong>نوٹ:</strong> یہ ڈیٹا 12 سال کی عمر کے بعد کا کاؤنٹ کیا گیا ہے۔ میں نے مان کر چلا ہوں کہ آپ 12 سال کے اندر بالغ ہو گئے تھے۔ اگر آپ اس سے پہلے یا بعد میں بالغ ہوئے ہیں، تو بہتر ہے کہ آپ مفتی صاحب کا کانٹیکٹ نمبر لیں اور ان سے تمام معلومات حاصل کریں۔</p>
+                <p class="copyright">© 2023 اسلامی سپرٹچوئل ٹریکر | دینی حساب کتاب</p>
+            </div>
+        </footer> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
