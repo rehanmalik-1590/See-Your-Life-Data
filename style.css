@@ -34,12 +34,14 @@ body {
     direction: rtl;
     overflow-x: hidden;
     position: relative;
+    width: 100%;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    width: 100%;
 }
 
 /* Header Styles */
@@ -47,6 +49,7 @@ header {
     text-align: center;
     padding: 20px 0;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .darood {
@@ -59,11 +62,13 @@ header {
     justify-content: center;
     gap: 20px;
     text-shadow: 0 0 5px rgba(229, 165, 10, 0.2);
+    flex-wrap: wrap;
 }
 
 .darood-text {
     flex: 1;
     text-align: center;
+    min-width: 300px;
 }
 
 .darood-text h1 {
@@ -85,6 +90,7 @@ header {
     align-items: center;
     margin: 30px 0;
     position: relative;
+    width: 100%;
 }
 
 .section-line span {
@@ -105,6 +111,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    white-space: nowrap;
 }
 
 /* Section Styles */
@@ -117,6 +124,7 @@ header {
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .app-section::before {
@@ -149,6 +157,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    width: 100%;
 }
 
 .input-section, .result-section {
@@ -163,6 +172,7 @@ header {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .input-section:hover, .result-section:hover {
@@ -183,6 +193,7 @@ header {
 .input-group {
     margin-bottom: 20px;
     position: relative;
+    width: 100%;
 }
 
 .input-group label {
@@ -365,6 +376,7 @@ header {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transition: var(--transition);
     backdrop-filter: blur(10px);
+    width: 100%;
 }
 
 .card:hover {
@@ -378,6 +390,7 @@ header {
     padding: 20px;
     background: rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid var(--glass-border);
+    flex-wrap: wrap;
 }
 
 .user-avatar {
@@ -391,6 +404,7 @@ header {
     margin-left: 15px;
     overflow: hidden;
     border: 2px solid var(--secondary-color);
+    flex-shrink: 0;
 }
 
 .user-avatar i {
@@ -407,6 +421,7 @@ header {
 .user-info {
     flex: 1;
     text-align: right;
+    min-width: 200px;
 }
 
 .user-info h3 {
@@ -424,6 +439,7 @@ header {
 
 .card-body {
     padding: 20px;
+    width: 100%;
 }
 
 .stats-grid, .qaza-stats {
@@ -431,6 +447,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .stat-item {
@@ -446,6 +463,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .stat-item:hover {
@@ -504,6 +522,7 @@ header {
     margin-bottom: 15px;
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(5px);
+    width: 100%;
 }
 
 .lifetime-stats h4 {
@@ -529,6 +548,7 @@ header {
     background: rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     border: 1px solid rgba(46, 194, 126, 0.2);
+    width: 100%;
 }
 
 .current-time-section h5 {
@@ -544,6 +564,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 12px;
+    width: 100%;
 }
 
 .time-item {
@@ -556,6 +577,7 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: var(--transition);
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .time-item:hover {
@@ -600,6 +622,7 @@ header {
     background: rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     border: 1px solid var(--glass-border);
+    width: 100%;
 }
 
 .projection-options label {
@@ -615,6 +638,7 @@ header {
     display: flex;
     gap: 8px;
     margin-bottom: 12px;
+    flex-wrap: wrap;
 }
 
 .projection-btn {
@@ -648,6 +672,7 @@ header {
     border-radius: 10px;
     border: 1px solid rgba(46, 194, 126, 0.2);
     line-height: 1.6;
+    width: 100%;
 }
 
 #lifeAnalysis p {
@@ -667,6 +692,7 @@ header {
     border-radius: 10px;
     margin-top: 15px;
     font-size: 0.9rem;
+    width: 100%;
 }
 
 .accuracy-message p {
@@ -694,6 +720,7 @@ header {
     border: 1px solid var(--glass-border);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
+    width: 100%;
 }
 
 .guidance-card .card-header {
@@ -701,6 +728,7 @@ header {
     text-align: center;
     background: rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid rgba(229, 165, 10, 0.2);
+    flex-wrap: wrap;
 }
 
 .guidance-card .card-header h3 {
@@ -715,6 +743,7 @@ header {
 
 .guidance-card .card-body {
     padding: 25px;
+    width: 100%;
 }
 
 .intro-message {
@@ -727,6 +756,7 @@ header {
     border: 1px solid rgba(46, 194, 126, 0.3);
     text-align: right;
     word-break: break-word;
+    width: 100%;
 }
 
 .guidance-grid {
@@ -734,6 +764,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .guidance-item {
@@ -747,6 +778,7 @@ header {
     min-height: 320px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .guidance-item:hover {
@@ -786,6 +818,7 @@ header {
     list-style-type: none;
     padding-right: 20px;
     flex: 1;
+    width: 100%;
 }
 
 .guidance-item li {
@@ -796,6 +829,7 @@ header {
     text-align: right;
     font-size: 1rem;
     word-break: break-word;
+    width: 100%;
 }
 
 .guidance-item.positive li:before {
@@ -823,6 +857,7 @@ header {
     border-radius: 12px;
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(5px);
+    width: 100%;
 }
 
 .naseehat-section h4 {
@@ -839,6 +874,7 @@ header {
     line-height: 1.8;
     font-size: 1.05rem;
     text-align: right;
+    width: 100%;
 }
 
 .naseehat-text p {
@@ -847,6 +883,7 @@ header {
     text-align: justify;
     word-break: break-word;
     text-align: right;
+    width: 100%;
 }
 
 .naseehat-text p:last-child {
@@ -881,6 +918,7 @@ header {
     list-style-type: none;
     padding-right: 20px;
     margin: 20px 0;
+    width: 100%;
 }
 
 .time-list li {
@@ -889,6 +927,7 @@ header {
     line-height: 1.6;
     position: relative;
     word-break: break-word;
+    width: 100%;
 }
 
 .time-list li:before {
@@ -925,20 +964,27 @@ header {
     font-size: 1.2em;
 }
 
-/* Modal Styles */
+/* ======================================== */
+/* مفتی کارڈ کے لیے فکسڈ CSS - UPDATED */
+/* ======================================== */
+
+/* Modal Styles - UPDATED for perfect centering */
 .modal {
     display: none;
     position: fixed;
     top: 0;
+    left: 0;
     right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.85);
     z-index: 1000;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 20px;
     animation: fadeIn 0.3s ease;
+    overflow-y: auto;
 }
 
 @keyframes fadeIn {
@@ -948,14 +994,21 @@ header {
 
 .modal-content {
     background: var(--futuristic-gradient);
-    width: 95%;
-    max-width: 450px;
+    width: 100%;
+    max-width: 500px;
+    min-width: 280px;
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid var(--glass-border);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
     animation: slideUp 0.3s ease;
     backdrop-filter: blur(10px);
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 @keyframes slideUp {
@@ -970,6 +1023,8 @@ header {
     padding: 20px;
     background: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid var(--glass-border);
+    flex-wrap: wrap;
+    flex-shrink: 0;
 }
 
 .modal-header h3 {
@@ -979,6 +1034,7 @@ header {
     gap: 10px;
     font-size: 1.4rem;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .close-modal {
@@ -995,6 +1051,8 @@ header {
     justify-content: center;
     border-radius: 50%;
     line-height: 1;
+    flex-shrink: 0;
+    padding: 0;
 }
 
 .close-modal:hover {
@@ -1004,30 +1062,38 @@ header {
 
 .modal-body {
     padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    overflow-y: auto;
 }
 
 .molvi-card {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    flex-direction: row-reverse;
     border: 1px solid var(--glass-border);
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 450px;
 }
 
 .molvi-avatar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -1040,61 +1106,90 @@ header {
 
 .molvi-info {
     flex: 1;
-    text-align: right;
+    text-align: center;
     min-width: 200px;
+    max-width: 100%;
 }
 
 .molvi-info h4 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: var(--light-color);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     word-break: break-word;
+    line-height: 1.3;
+    margin-top: 0;
 }
 
 .molvi-info p {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.5;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 10px 0;
 }
 
 .molvi-info i {
     color: var(--accent-color);
-    font-size: 1rem;
-    min-width: 20px;
+    font-size: 1.2rem;
+    min-width: 25px;
     margin-top: 2px;
 }
 
 .molvi-message {
     background: rgba(46, 194, 126, 0.1);
-    padding: 15px;
+    padding: 20px;
     border-radius: 12px;
     margin-bottom: 20px;
     border: 1px solid rgba(46, 194, 126, 0.2);
-    text-align: right;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    flex-shrink: 0;
 }
 
 .molvi-message p {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     line-height: 1.6;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.molvi-message p:last-child {
+    margin-bottom: 0;
 }
 
 .molvi-message i {
     color: var(--secondary-color);
-    font-size: 1rem;
-    min-width: 20px;
+    font-size: 1.2rem;
+    min-width: 25px;
     margin-top: 2px;
+}
+
+#callMolviBtn {
+    width: 100%;
+    max-width: 450px;
+    padding: 16px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+#callMolviBtn i {
+    margin-right: 8px;
 }
 
 /* Footer */
@@ -1106,6 +1201,7 @@ footer {
     border: 1px solid var(--glass-border);
     text-align: right;
     backdrop-filter: blur(10px);
+    width: 100%;
 }
 
 .footer-content p {
@@ -1130,109 +1226,124 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* LINE HEIGHT INCREASE IN RESPONSIVE - زیادہ بڑھایا */
-@media (max-width: 1024px) {
-    .naseehat-text p {
-        line-height: 3.0 !important; /* زیادہ بڑھایا */
-        margin-bottom: 27px !important; /* مارجن بھی بڑھایا */
-    }
-}
+/* =========================== */
+/* FULL RESPONSIVE DESIGN */
+/* =========================== */
 
-@media (max-width: 900px) {
-    .naseehat-text p {
-        line-height: 3.2 !important; /* اور زیادہ بڑھایا */
-        margin-bottom: 28px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .naseehat-text {
-        font-size: 1.05rem;
+/* Large Desktop (1440px and above) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
     }
     
-    .naseehat-text p {
-        line-height: 3.5 !important; /* بہت زیادہ بڑھایا */
-        margin-bottom: 30px !important;
-    }
-    
-    .separate-line {
-        font-size: 1.3rem;
-        padding: 15px;
-        max-width: 90%;
-        width: 90%;
-        margin: 25px auto;
-    }
-    
-    .urdu-translation {
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 650px) {
-    .naseehat-text p {
-        line-height: 3.8 !important; /* مزید بڑھایا */
-        margin-bottom: 32px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .naseehat-text {
-        font-size: 1.05rem;
-    }
-    
-    .naseehat-text p {
-        line-height: 4.0 !important; /* بہت زیادہ */
-        margin-bottom: 35px !important;
-    }
-    
-    .separate-line {
-        font-size: 1.2rem;
-        padding: 12px;
-        max-width: 95%;
-        width: 95%;
-        margin: 20px auto;
-    }
-    
-    .urdu-translation {
-        font-size: 1rem;
-    }
-    
-    .time-list li {
-        margin-bottom: 15px;
-        padding-right: 25px;
-        line-height: 1.6;
-    }
-    
-    .time-list li:before {
+    .section-title {
         font-size: 1.8rem;
     }
-}
-
-@media (max-width: 400px) {
-    .naseehat-text p {
-        line-height: 4.2 !important; /* اور زیادہ */
-        margin-bottom: 38px !important;
+    
+    .darood-text h1 {
+        font-size: 1.3rem;
+    }
+    
+    /* مفتی کارڈ کے لیے - UPDATED */
+    .modal-content {
+        max-width: 550px;
+        min-width: 450px;
+    }
+    
+    .molvi-card {
+        max-width: 500px;
+        padding: 30px;
+    }
+    
+    .molvi-avatar {
+        width: 150px;
+        height: 150px;
+        border-width: 4px;
+    }
+    
+    .molvi-info h4 {
+        font-size: 1.8rem;
+    }
+    
+    .molvi-info p {
+        font-size: 1.1rem;
+    }
+    
+    .molvi-message {
+        max-width: 500px;
+        padding: 25px;
+    }
+    
+    .molvi-message p {
+        font-size: 1.1rem;
+    }
+    
+    #callMolviBtn {
+        max-width: 500px;
+        padding: 18px;
+        font-size: 1.2rem;
     }
 }
 
-@media (max-width: 360px) {
-    .naseehat-text p {
-        line-height: 4.5 !important; /* سب سے زیادہ */
-        margin-bottom: 40px !important;
+/* Desktop (1024px to 1439px) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .container {
+        max-width: 1000px;
+        padding: 20px;
     }
-}
-
-@media (max-width: 320px) {
-    .naseehat-text p {
-        line-height: 4.8 !important; /* انتہائی زیادہ */
-        margin-bottom: 42px !important;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
+    
     .section-container {
-        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .input-section, .result-section {
+        min-width: 280px;
+    }
+    
+    /* مفتی کارڈ کے لیے - UPDATED */
+    .modal-content {
+        max-width: 500px;
+        min-width: 400px;
+    }
+    
+    .molvi-card {
+        flex-direction: row;
+        padding: 25px;
+        max-width: 450px;
+    }
+    
+    .molvi-avatar {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .molvi-info {
+        text-align: center;
+    }
+    
+    .molvi-info p {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .molvi-info h4 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Tablet Landscape (768px to 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 15px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-title i {
+        font-size: 1.3rem;
     }
     
     .darood {
@@ -1244,18 +1355,113 @@ footer {
         font-size: 1.1rem;
     }
     
-    .current-time-grid {
+    .section-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .input-section, .result-section {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    .stats-grid, .qaza-stats {
         grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .stat-item {
+        min-height: 130px;
+        padding: 15px 12px;
+    }
+    
+    .stat-item h4 {
+        font-size: 0.95rem;
+        min-height: 35px;
+    }
+    
+    .stat-item p {
+        font-size: 1.3rem;
     }
     
     .guidance-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .guidance-item {
+        min-height: auto;
+    }
+    
+    .current-time-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* مفتی کارڈ کے لیے - UPDATED */
+    .modal-content {
+        width: 90%;
+        max-width: 450px;
+        min-width: 350px;
+    }
+    
+    .molvi-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+        max-width: 400px;
+    }
+    
+    .molvi-info {
+        text-align: center;
+        min-width: 100%;
+    }
+    
+    .molvi-info p {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .molvi-avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .molvi-info h4 {
+        font-size: 1.5rem;
+    }
+    
+    .molvi-info p {
+        font-size: 1rem;
+    }
+    
+    .molvi-message {
+        max-width: 400px;
+    }
+    
+    #callMolviBtn {
+        max-width: 400px;
+    }
+    
+    /* LINE HEIGHT INCREASE IN RESPONSIVE - زیادہ بڑھایا */
+    .naseehat-text p {
+        line-height: 3.0 !important;
+        margin-bottom: 27px !important;
     }
 }
 
-@media (max-width: 768px) {
+/* Tablet Portrait (600px to 767px) */
+@media (max-width: 767px) and (min-width: 600px) {
     .container {
+        max-width: 95%;
         padding: 15px;
+    }
+    
+    .section-line h2 {
+        font-size: 1.5rem;
+        padding: 0 15px;
+        white-space: normal;
+        text-align: center;
     }
     
     .section-title {
@@ -1265,74 +1471,8 @@ footer {
         text-align: center;
     }
     
-    .section-title i {
-        font-size: 1.3rem;
-    }
-    
-    .stats-grid, .qaza-stats {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-    
-    .stat-item {
-        padding: 15px 12px;
-        min-height: 130px;
-    }
-    
-    .stat-item i {
-        font-size: 1.8rem;
-    }
-    
-    .stat-item h4 {
-        font-size: 0.9rem;
-        min-height: 35px;
-    }
-    
-    .stat-item p {
-        font-size: 1.3rem;
-    }
-    
-    .molvi-card {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 15px;
-    }
-    
-    .molvi-info p {
-        justify-content: center;
-    }
-    
-    .current-time-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .modal-content {
-        width: 95%;
-        max-width: 95%;
-    }
-    
-    .guidance-item {
-        min-height: auto;
-    }
-    
-    .naseehat-text p {
-        text-align: right;
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 10px;
-    }
-    
-    .input-section, .result-section {
-        padding: 15px;
-    }
-    
-    .stats-grid, .qaza-stats {
-        grid-template-columns: 1fr;
+    .darood i {
+        font-size: 1.4rem;
     }
     
     .card-header {
@@ -1352,17 +1492,35 @@ footer {
         font-size: 2.2rem;
     }
     
+    .user-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .stats-grid, .qaza-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .stat-item {
+        padding: 12px 10px;
+        min-height: 120px;
+    }
+    
+    .stat-item h4 {
+        font-size: 0.9rem;
+        min-height: 30px;
+    }
+    
+    .stat-item p {
+        font-size: 1.2rem;
+    }
+    
     .projection-buttons {
         flex-direction: column;
     }
     
-    .darood i {
-        font-size: 1.3rem;
-    }
-    
-    .section-line h2 {
-        font-size: 1.5rem;
-        padding: 0 10px;
+    .projection-btn {
+        width: 100%;
     }
     
     .btn-primary, .btn-secondary {
@@ -1370,27 +1528,8 @@ footer {
         font-size: 0.95rem;
     }
     
-    .guidance-item {
-        padding: 15px;
-        min-height: auto;
-    }
-    
-    .molvi-message p {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-    
-    .molvi-info p {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-    
-    .naseehat-text p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        text-indent: 10px;
+    .current-time-grid {
+        grid-template-columns: 1fr;
     }
     
     .time-item {
@@ -1403,28 +1542,277 @@ footer {
         width: 100%;
         text-align: right;
     }
+    
+    /* مفتی کارڈ کے لیے - UPDATED */
+    .modal-content {
+        max-width: 420px;
+        min-width: 350px;
+        width: 90%;
+    }
+    
+    .modal {
+        padding: 15px;
+    }
+    
+    .molvi-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+        max-width: 380px;
+    }
+    
+    .molvi-avatar {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .molvi-info {
+        text-align: center;
+        min-width: 100%;
+    }
+    
+    .molvi-info h4 {
+        font-size: 1.4rem;
+    }
+    
+    .molvi-info p {
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .molvi-message {
+        max-width: 380px;
+        padding: 18px;
+    }
+    
+    .molvi-message p {
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    #callMolviBtn {
+        max-width: 380px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+    
+    /* LINE HEIGHT INCREASE IN RESPONSIVE */
+    .naseehat-text p {
+        line-height: 3.5 !important;
+        margin-bottom: 30px !important;
+        font-size: 1rem;
+        text-align: right;
+    }
+    
+    .separate-line {
+        font-size: 1.3rem;
+        padding: 15px;
+        max-width: 90%;
+    }
+    
+    .urdu-translation {
+        font-size: 1.1rem;
+    }
 }
 
-/* Responsive design for date input */
-@media (max-width: 768px) {
-    .input-group input[type="date"] {
-        padding: 12px 15px 12px 40px;
-        background-position: left 12px center;
-        background-size: 18px 18px;
+/* Mobile Large (480px to 599px) */
+@media (max-width: 599px) and (min-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+    
+    .darood {
+        gap: 10px;
+    }
+    
+    .darood-text h1 {
+        font-size: 1rem;
+    }
+    
+    .section-line h2 {
+        font-size: 1.3rem;
+        padding: 0 10px;
+        white-space: normal;
+        line-height: 1.3;
+        text-align: center;
+    }
+    
+    .app-section {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+        gap: 8px;
+    }
+    
+    .section-title i {
+        font-size: 1.2rem;
+    }
+    
+    .input-section, .result-section {
+        padding: 15px;
+    }
+    
+    .input-section h3, .result-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card-header {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .user-avatar {
+        width: 50px;
+        height: 50px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .user-avatar i {
+        font-size: 1.8rem;
+    }
+    
+    .user-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .stats-grid, .qaza-stats {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .stat-item {
+        padding: 15px 10px;
+        min-height: 110px;
+    }
+    
+    .stat-item h4 {
+        font-size: 0.9rem;
+        min-height: 30px;
+    }
+    
+    .stat-item p {
+        font-size: 1.3rem;
+    }
+    
+    .guidance-item {
+        padding: 15px;
+        min-height: auto;
+    }
+    
+    .guidance-item h4 {
+        font-size: 1.2rem;
+    }
+    
+    /* مفتی کارڈ کے لیے - UPDATED */
+    .modal {
+        padding: 10px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .modal-content {
+        max-width: 400px;
+        min-width: 320px;
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    .modal-header {
+        padding: 15px;
+    }
+    
+    .modal-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .molvi-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 18px;
+        max-width: 350px;
+    }
+    
+    .molvi-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .molvi-info {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .molvi-info h4 {
+        font-size: 1.3rem;
+    }
+    
+    .molvi-info p {
+        font-size: 0.95rem;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 8px;
+    }
+    
+    .molvi-message {
+        max-width: 350px;
+        padding: 15px;
+    }
+    
+    .molvi-message p {
+        font-size: 0.95rem;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    
+    #callMolviBtn {
+        max-width: 350px;
+        padding: 14px;
+        font-size: 1rem;
+    }
+    
+    .naseehat-text p {
+        font-size: 0.95rem;
+        line-height: 2.3 !important;
+        margin-bottom: 20px !important;
+        text-indent: 10px;
+    }
+    
+    .separate-line {
+        font-size: 1.2rem;
+        padding: 12px;
+        max-width: 95%;
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    .urdu-translation {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    
+    .time-list li {
+        margin-bottom: 10px;
+        padding-right: 20px;
+        line-height: 1.4;
         font-size: 0.95rem;
     }
     
-    .input-group input[type="date"]:focus {
-        background-position: left 12px center;
-        background-size: 18px 18px;
+    .time-list li:before {
+        font-size: 1.5rem;
     }
     
-    .input-group input[type="date"]::-webkit-calendar-picker-indicator {
-        width: 40px;
-    }
-}
-
-@media (max-width: 480px) {
+    /* Date input responsive */
     .input-group input[type="date"] {
         padding: 10px 12px 10px 35px;
         background-position: left 10px center;
@@ -1440,4 +1828,643 @@ footer {
     .input-group input[type="date"]::-webkit-calendar-picker-indicator {
         width: 35px;
     }
+}
+
+/* Mobile Small (320px to 479px) */
+@media (max-width: 479px) {
+    .container {
+        padding: 8px;
+        max-width: 100%;
+    }
+    
+    header {
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+    
+    .darood {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .darood-text h1 {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .darood i {
+        font-size: 1.2rem;
+    }
+    
+    .section-line {
+        margin: 20px 0;
+    }
+    
+    .section-line h2 {
+        font-size: 1.1rem;
+        padding: 0 8px;
+        white-space: normal;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
+    
+    .section-line span {
+        height: 1px;
+    }
+    
+    .app-section {
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+    }
+    
+    .section-title {
+        font-size: 1.1rem;
+        gap: 6px;
+        margin-bottom: 15px;
+    }
+    
+    .section-title i {
+        font-size: 1rem;
+    }
+    
+    .section-container {
+        gap: 15px;
+    }
+    
+    .input-section, .result-section {
+        padding: 12px;
+        border-radius: 10px;
+        min-width: 100%;
+    }
+    
+    .input-section h3, .result-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        gap: 6px;
+    }
+    
+    .input-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-group label {
+        font-size: 0.9rem;
+        gap: 6px;
+    }
+    
+    .input-group select, .input-group input[type="text"], .input-group input[type="number"] {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .card {
+        border-radius: 12px;
+    }
+    
+    .card-header {
+        padding: 12px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .user-avatar {
+        width: 45px;
+        height: 45px;
+        margin: 0 auto 8px auto;
+    }
+    
+    .user-avatar i {
+        font-size: 1.6rem;
+    }
+    
+    .user-info h3 {
+        font-size: 1.1rem;
+        margin-bottom: 3px;
+    }
+    
+    .user-age {
+        font-size: 0.9rem;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    .stats-grid, .qaza-stats {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .stat-item {
+        padding: 12px 8px;
+        min-height: 100px;
+        border-radius: 8px;
+    }
+    
+    .stat-item i {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .stat-item h4 {
+        font-size: 0.85rem;
+        min-height: 25px;
+        margin-bottom: 5px;
+    }
+    
+    .stat-item p {
+        font-size: 1.1rem;
+    }
+    
+    .lifetime-stats {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .lifetime-stats h4 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .current-time-section {
+        padding: 12px;
+        margin: 15px 0;
+    }
+    
+    .current-time-section h5 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .current-time-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .time-item {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .time-label, .time-value {
+        width: 100%;
+        font-size: 0.85rem;
+        text-align: right;
+    }
+    
+    .guidance-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .guidance-item {
+        padding: 12px;
+        min-height: auto;
+        border-radius: 10px;
+    }
+    
+    .guidance-item h4 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .guidance-item li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        padding-right: 20px;
+    }
+    
+    /* مفتی کارڈ کے لیے - UPDATED */
+    .modal {
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .modal-content {
+        max-width: 350px;
+        min-width: 280px;
+        width: 98%;
+        margin: 10px auto;
+        max-height: 85vh;
+    }
+    
+    .modal-header {
+        padding: 12px;
+    }
+    
+    .modal-header h3 {
+        font-size: 1.2rem;
+        gap: 8px;
+    }
+    
+    .close-modal {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
+    }
+    
+    .modal-body {
+        padding: 12px;
+    }
+    
+    .molvi-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding: 15px;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+    
+    .molvi-avatar {
+        width: 90px;
+        height: 90px;
+        border-width: 2px;
+    }
+    
+    .molvi-info {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .molvi-info h4 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .molvi-info p {
+        font-size: 0.9rem;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 8px;
+    }
+    
+    .molvi-info i {
+        font-size: 1rem;
+    }
+    
+    .molvi-message {
+        max-width: 300px;
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .molvi-message p {
+        font-size: 0.9rem;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .molvi-message i {
+        font-size: 1rem;
+    }
+    
+    #callMolviBtn {
+        max-width: 300px;
+        padding: 12px;
+        font-size: 0.95rem;
+        margin-top: 5px;
+    }
+    
+    .naseehat-section {
+        padding: 15px;
+        margin-top: 15px;
+    }
+    
+    .naseehat-section h4 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .naseehat-text p {
+        font-size: 0.9rem;
+        line-height: 2.0 !important;
+        margin-bottom: 18px !important;
+        text-indent: 8px;
+    }
+    
+    .separate-line {
+        font-size: 1.1rem;
+        padding: 10px;
+        max-width: 98%;
+        width: 98%;
+        margin: 15px auto;
+        border-radius: 8px;
+    }
+    
+    .urdu-translation {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+    
+    .time-list {
+        padding-right: 15px;
+        margin: 15px 0;
+    }
+    
+    .time-list li {
+        margin-bottom: 8px;
+        padding-right: 18px;
+        line-height: 1.3;
+        font-size: 0.9rem;
+    }
+    
+    .time-list li:before {
+        font-size: 1.3rem;
+    }
+    
+    footer {
+        padding: 15px;
+        margin-top: 30px;
+        border-radius: 12px;
+    }
+    
+    .footer-content p {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+    
+    .copyright {
+        font-size: 0.8rem;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* Date input responsive for small mobile */
+    .input-group input[type="date"] {
+        padding: 10px 12px 10px 32px;
+        background-position: left 8px center;
+        background-size: 14px 14px;
+        font-size: 0.85rem;
+    }
+    
+    .input-group input[type="date"]:focus {
+        background-position: left 8px center;
+        background-size: 14px 14px;
+    }
+    
+    .input-group input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 32px;
+    }
+    
+    /* LINE HEIGHT INCREASE IN RESPONSIVE - MOBILE SMALL */
+    .naseehat-text p {
+        line-height: 2.5 !important;
+        margin-bottom: 25px !important;
+    }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+    .container {
+        padding: 5px;
+    }
+    
+    .section-line h2 {
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+    
+    .section-title {
+        font-size: 1rem;
+    }
+    
+    .input-section h3, .result-section h3 {
+        font-size: 1rem;
+    }
+    
+    .stat-item h4 {
+        font-size: 0.8rem;
+    }
+    
+    .stat-item p {
+        font-size: 1rem;
+    }
+    
+    /* مفتی کارڈ کے لیے - UPDATED */
+    .modal {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .modal-content {
+        max-width: 300px;
+        min-width: 250px;
+        width: 98%;
+        margin: 5px auto;
+        border-radius: 12px;
+        max-height: 80vh;
+    }
+    
+    .modal-header {
+        padding: 10px;
+    }
+    
+    .modal-header h3 {
+        font-size: 1.1rem;
+        gap: 6px;
+    }
+    
+    .close-modal {
+        width: 30px;
+        height: 30px;
+        font-size: 1.3rem;
+    }
+    
+    .modal-body {
+        padding: 10px;
+    }
+    
+    .molvi-card {
+        padding: 12px;
+        max-width: 260px;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+    
+    .molvi-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .molvi-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .molvi-info p {
+        font-size: 0.85rem;
+    }
+    
+    .molvi-info i {
+        font-size: 0.9rem;
+    }
+    
+    .molvi-message {
+        padding: 10px;
+        max-width: 260px;
+        margin-bottom: 12px;
+    }
+    
+    .molvi-message p {
+        font-size: 0.85rem;
+    }
+    
+    .molvi-message i {
+        font-size: 0.9rem;
+    }
+    
+    #callMolviBtn {
+        max-width: 260px;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .naseehat-text p {
+        font-size: 0.85rem;
+        line-height: 1.4 !important;
+        margin-bottom: 16px !important;
+    }
+    
+    .separate-line {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+    
+    /* LINE HEIGHT INCREASE IN RESPONSIVE - EXTRA SMALL */
+    .naseehat-text p {
+        line-height: 2.2 !important;
+        margin-bottom: 20px !important;
+    }
+}
+
+/* LINE HEIGHT INCREASE IN RESPONSIVE - FULL VERSION */
+@media (max-width: 1024px) {
+    .naseehat-text p {
+        line-height: 3.0 !important;
+        margin-bottom: 27px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .naseehat-text p {
+        line-height: 3.2 !important;
+        margin-bottom: 28px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .naseehat-text p {
+        line-height: 3.5 !important;
+        margin-bottom: 30px !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .naseehat-text p {
+        line-height: 3.8 !important;
+        margin-bottom: 32px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .naseehat-text p {
+        line-height: 4.0 !important;
+        margin-bottom: 35px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .naseehat-text p {
+        line-height: 4.2 !important;
+        margin-bottom: 38px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .naseehat-text p {
+        line-height: 4.5 !important;
+        margin-bottom: 40px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .naseehat-text p {
+        line-height: 2.8 !important;
+        margin-bottom: 25px !important;
+    }
+}
+
+/* ========================================== */
+/* ADDITIONAL FIXES FOR PERFECT CENTERING */
+/* ========================================== */
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+    .modal {
+        height: -webkit-fill-available;
+    }
+}
+
+/* Ensure modal is always centered and button is visible */
+@media (max-height: 700px) {
+    .modal-content {
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+    
+    .modal-body {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #callMolviBtn {
+        position: sticky;
+        bottom: 10px;
+        z-index: 10;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Fix for Firefox scrollbar */
+.modal-content {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) rgba(0, 0, 0, 0.3);
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+/* Ensure button is always fully visible */
+.modal-body {
+    padding-bottom: 30px; /* Extra space for button */
 }
